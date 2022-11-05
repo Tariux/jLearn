@@ -1,0 +1,124 @@
+@import url('https://v1.fontapi.ir/css/Vazir');
+a {
+    color: unset;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    color: unset;
+    font-weight: 900;
+}
+body {
+    background: #121212;
+    color: #f1f1f1;
+    font-family: Vazir;
+    direction: rtl;
+    overflow: hidden;
+
+}
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+.no-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
+#welcome h1 {
+    font-weight: 900;
+    text-shadow: 0 0 5px #000;
+    cursor: pointer;
+}
+select {
+    border-radius: 5px;
+    border: unset;
+    padding: 5px 25px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin: 15px;
+    color: #222;
+    font-weight: 200;
+}
+input,button {
+    padding: 5px 25px;
+    margin: 15px;
+    color: #222;
+    background-color: #f1f1f1;
+    border: unset;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    font-weight: 300;
+}
+.fail {
+    background: #d30d0d;
+    color: #fff;
+    padding: 10px 30px;
+}
+.success {
+    background: #0dd354;
+    color: #fff;
+    padding: 10px 30px;
+}
+input[type=submit].success:hover {
+    background: #fff;
+    color: #0dd354;
+    transition: .3s;
+}
+.page {
+    display: none;
+}
+.active-page {
+    display: flex;
+}
+
+.control-buttons {
+    position: fixed;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-number {
+    position: fixed;
+    top: 25px;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #bbbbbb;
+}
+
+.message {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: none;
+}
+
+.message h1 {
+    font-weight: 100;
+    color: #fff;
+}
+.message button {
+    color: #222;
+    background-color: #fff;
+}
+
+label {
+    min-width: 100px;
+}
