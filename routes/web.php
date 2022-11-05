@@ -3,6 +3,7 @@
 use App\Http\Controllers\CreateAccountController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LoginAccountController;
+use App\Models\Service;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,3 +31,19 @@ Route::get('/account/logout' , [LoginAccountController::class , 'logout'])->name
 
 
 Route::post('/account/save/profile' , [DashboardController::class , 'save_profile'])->name('save-profile')->middleware(['auth']);
+
+Route::get('/account/create/service' , [DashboardController::class , 'create_service_page'])->name('create-service-page')->middleware(['auth']);
+Route::post('/account/create/service' , [DashboardController::class , 'create_service'])->name('create-service')->middleware(['auth']);
+
+
+Route::get('/service/{service}', function ($service) {
+    $service_data = Service::find($service);
+
+    if (!empty($service_data)) {
+        $title = $service_data->service_title;
+
+        return view('service' , compact('service_data' , 'title'));
+    } else {
+        return redirect(route('home'));
+    }
+});

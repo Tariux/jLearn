@@ -1,4 +1,4 @@
-@import url('https://v1.fontapi.ir/css/Vazir');
+@import url("https://v1.fontapi.ir/css/Vazir");
 a {
     color: unset;
     text-decoration: none;
@@ -14,7 +14,6 @@ body {
     font-family: Vazir;
     direction: rtl;
     overflow: hidden;
-
 }
 .center-screen {
     display: flex;
@@ -27,7 +26,7 @@ body {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
-  }
+}
 
 #welcome h1 {
     font-weight: 900;
@@ -44,7 +43,8 @@ select {
     color: #222;
     font-weight: 200;
 }
-input,button {
+input,
+button {
     padding: 5px 25px;
     margin: 15px;
     color: #222;
@@ -65,10 +65,10 @@ input,button {
     color: #fff;
     padding: 10px 30px;
 }
-input[type=submit].success:hover {
+input[type="submit"].success:hover {
     background: #fff;
     color: #0dd354;
-    transition: .3s;
+    transition: 0.3s;
 }
 .page {
     display: none;
@@ -121,4 +121,31 @@ input[type=submit].success:hover {
 
 label {
     min-width: 100px;
+}
+
+textarea {
+    border: 0;
+    background-color: #f1f1f1;
+    outline: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+}
+.services {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    overflow: auto;
+    height: 100vh;
+    padding: 15vh 25px;
+}
+.service-item {
+    width: 100%;
+    background: #f1f1f1;
+    min-height: 100px;
+    margin: 25px auto;
+    padding: 15px;
+    border-radius: 5px;
+    color: #333;
+
 }

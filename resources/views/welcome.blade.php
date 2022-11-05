@@ -3,7 +3,7 @@
         <div class="container center-screen">
             <div>
 
-                <h1 style="font-weight: 900;color:#fff;">LIVE FREE OR DIE</h1>
+                <h1 style="font-weight: 50;color:#fff;">LIVE FREE OR DIE</h1>
             
             <a href="{{ route('home') }}">
                 <button class="success">
@@ -26,7 +26,7 @@
                     ناحیه کاربری
                 </button>
             </a>
-            <a href="{{ route('account') }}">
+            <a href="{{ route('create-service-page') }}">
                 <button class="success">
                     سرویس ها
                 </button>

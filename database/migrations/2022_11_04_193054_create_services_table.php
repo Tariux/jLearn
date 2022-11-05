@@ -20,9 +20,10 @@ class CreateServicesTable extends Migration
             //$table->foreign('service_provider')->references('user_ID')->on('users')->onDelete('cascade');
 
             $table->string('service_title');
+            $table->longText('service_desc');
             $table->string('service_type')->default('unknown');
-            $table->integer('service_price');
-            $table->integer('service_qty');
+            $table->integer('service_price')->default('0');
+            $table->integer('service_qty')->default(1);
 
             $table->timestamps();
         });
